@@ -54,9 +54,16 @@ class Solution(Repository, Queries):
     def count_of_white_wines(self) -> int:
         return len(
             [
-                wine
-                for wine in self.entities
-                if wine.Wine.type == "White"
+                wines.type
+                for wines in chain.from_iterable(
+                [
+                    winery.wines
+                    for winery in self.entities
+
+                ]
+
+            )
+            if wines.type == "White"
             ]
         )
 
@@ -78,6 +85,18 @@ def main() -> None:
 
     for winery in repository.entities:
         print(winery)
+    print("\n")
+    print("_________________________")
+    print(Solution.count_of_excellent_wineries(repository))
+    print("_________________________")
+    print(Solution.order(repository))
+    print("_________________________")
+    print(Solution.phone_number(repository,"06 30 455 2855"))
+    print("_________________________")
+    print(Solution.count_of_white_wines(repository))
+    print("_________________________")
+    print(Solution.group_by_rating(repository))
+
 
 
 
