@@ -3,7 +3,7 @@
     "phone_number": "06 52 999 888",
     "name": "Vinoteka",
     "location": "Debrecen",
-    "rating": "GOOD",
+    "rating": "Good",
     "wines": [
       {
         "type": "Red",
@@ -16,7 +16,7 @@
     "phone_number": "06 52 762 762 ",
     "name": "DiVino",
     "location": "Debrecen",
-    "rating":"EXCELLENT",
+    "rating":"Excellent",
     "wines": [
       {
         "type": "Rose",
@@ -39,7 +39,7 @@
     "phone_number": "+43 664 8734071",
     "name": "Vini per Tutti",
     "location": "Vienna",
-    "rating": "GOOD",
+    "rating": "Good",
     "wines": [
       {
         "type": "White",
@@ -57,7 +57,7 @@
     "phone_number": "06 30 455 2855",
     "name": "Wine Not?!",
     "location": "Budapest",
-    "rating": "POOR",
+    "rating": "Poor",
     "wines": [
       {
         "type": "Rose",
@@ -70,7 +70,7 @@
     "phone_number": "06 70 500 4532",
     "name": "Bottega del Vino",
     "location": "Budapest",
-    "rating": "AVERAGE",
+    "rating": "Average",
     "wines": [
       {
         "type": "White",
@@ -83,7 +83,7 @@
     "phone_number": "06 20 378 7763",
     "name": "DOBLO Wine Bar",
     "location": "Budapest",
-    "rating": "GOOD",
+    "rating": "Good",
     "wines": [
     ]
   }

@@ -43,12 +43,13 @@ class Solution(Repository, Queries):
             key=lambda winery: (winery.location,-len(winery.wines))
         )
 
-    def phone_number(self, phone_num: Winery.phone_number) -> Winery.name:
+    def phone_number(self, phone_num: str) -> Winery:
         return next(
-            winery.name
+            winery
             for winery in self.entities
             if winery.phone_number == phone_num
         )
+
 
     def count_of_white_wines(self) -> int:
         return len(
@@ -77,6 +78,8 @@ def main() -> None:
 
     for winery in repository.entities:
         print(winery)
+
+
 
 
 if __name__ == "__main__":
