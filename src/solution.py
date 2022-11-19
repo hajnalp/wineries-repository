@@ -33,7 +33,7 @@ class Solution(Repository, Queries):
             [
                 winery
                 for winery in self.entities
-                if winery.rating == "Excellent"
+                if winery.rating == winery.rating.EXCELLENT
             ]
         )
 
@@ -86,15 +86,15 @@ def main() -> None:
     for winery in repository.entities:
         print(winery)
     print("\n")
-    print("_________________________")
+    print("_________________________"+"\nNumber of excellent wineries")
     print(Solution.count_of_excellent_wineries(repository))
-    print("_________________________")
+    print("_________________________"+"\nWineries in order")
     print(Solution.order(repository))
-    print("_________________________")
+    print("_________________________"+"\nWinery that belongs to the given phone number")
     print(Solution.phone_number(repository,"06 30 455 2855"))
-    print("_________________________")
+    print("_________________________"+"\nThe count of white wines")
     print(Solution.count_of_white_wines(repository))
-    print("_________________________")
+    print("_________________________"+"\nWineries grouped by their rating")
     print(Solution.group_by_rating(repository))
 
 

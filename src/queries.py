@@ -29,7 +29,7 @@ class Queries(ABC):
     @abstractmethod
     def phone_number(self,phone_num: str)->Winery:
         """
-        Returns the winery that belong to the given number.
+        Returns the winery that belongs to the given number.
 
 
         :param phone_num: the phone number
