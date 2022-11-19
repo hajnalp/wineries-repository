@@ -43,7 +43,7 @@ class Solution(Repository, Queries):
             key=lambda winery: (winery.location,-len(winery.wines))
         )
 
-    def phone_number(self, phone_num: str) -> Winery:
+    def phone_number(self, phone_num: Winery.phone_number) -> Winery.name:
         return next(
             winery.name
             for winery in self.entities

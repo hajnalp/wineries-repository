@@ -27,7 +27,7 @@ class Queries(ABC):
         """
 
     @abstractmethod
-    def phone_number(self,phone_num: str)->Winery:
+    def phone_number(self,phone_num: Winery.phone_number)->Winery.name:
         """
         Returns the name of the winery that belong to the given number.
 
